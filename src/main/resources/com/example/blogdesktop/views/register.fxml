@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/bootstrapfx.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.blogdesktop.controller.RegisterPageController">
+    <AnchorPane layoutX="187.0" layoutY="49.0" prefHeight="319.0" prefWidth="226.0">
+        <JFXTextField fx:id="textFieldUsername" layoutX="28.0" layoutY="110.0" prefHeight="35.0" prefWidth="166.0" promptText="Username" />
+        <JFXTextField fx:id="textFieldFullName" layoutX="28.0" layoutY="65.0" prefHeight="35.0" prefWidth="166.0" promptText="Full name" />
+        <JFXPasswordField fx:id="passwordFieldCheck" layoutX="28.0" layoutY="198.0" prefHeight="35.0" prefWidth="166.0" promptText="CheckPassword" />
+        <JFXPasswordField fx:id="passwordField" layoutX="28.0" layoutY="154.0" prefHeight="35.0" prefWidth="166.0" promptText="Password" />
+        <JFXButton fx:id="buttonRegister" layoutX="69.0" layoutY="263.0" onMouseClicked="#buttonRegisterOnClick" prefHeight="35.0" prefWidth="84.0" styleClass="btn-success" text="Register" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="14.0" prefHeight="41.0" prefWidth="190.0" text="Register" textAlignment="CENTER" textFill="#04cdff">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-primary" />
+            <String fx:value="h1" />
+         </styleClass>
+         <effect>
+            <GaussianBlur radius="0.0">
+               <input>
+                  <Bloom threshold="0.0">
+                     <input>
+                        <Lighting bumpInput="$null">
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Bloom>
+               </input>
+            </GaussianBlur>
+         </effect>
+      </Label>
+    </AnchorPane>
+
+</AnchorPane>

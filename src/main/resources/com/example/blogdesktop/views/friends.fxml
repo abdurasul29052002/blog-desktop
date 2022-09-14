@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="106.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.blogdesktop.controller.FriendsController">
+   <children>
+      <HBox layoutX="3.0" layoutY="3.0" prefHeight="100.0" prefWidth="594.0">
+         <children>
+            <ImageView fitHeight="93.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 150px;">
+               <image>
+                  <Image url="@../images/maximize.png" />
+               </image></ImageView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

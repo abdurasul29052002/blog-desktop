@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.blogdesktop.controller.DashboardController">
+    <HBox alignment="CENTER" prefHeight="45.0" prefWidth="563.0" spacing="50.0" AnchorPane.bottomAnchor="328.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+        <children>
+            <JFXToggleNode onMouseClicked="#buttonHomeOnClick" fx:id="buttonHome">
+                <toggleGroup>
+                    <ToggleGroup fx:id="hello" />
+                </toggleGroup>
+                <Label prefHeight="45" prefWidth="50">
+                    <graphic>
+                        <FontIcon iconColor="aqua" iconLiteral="dashicons-admin-home" iconSize="64" />
+                    </graphic>
+                </Label>
+            </JFXToggleNode>
+            <JFXToggleNode onMouseClicked="#buttonGroupOnClick" fx:id="buttonGroup">
+                <toggleGroup>
+                    <fx:reference source="hello" />
+                </toggleGroup>
+                <Label>
+                    <graphic>
+                        <FontIcon iconColor="aqua" iconLiteral="dashicons-groups" iconSize="64" />
+                    </graphic>
+                </Label>
+            </JFXToggleNode>
+            <JFXToggleNode onMouseClicked="#buttonProfileOnClick" fx:id="buttonProfile">
+                <toggleGroup>
+                    <fx:reference source="hello" />
+                </toggleGroup>
+                <Label>
+                    <graphic>
+                        <FontIcon iconColor="aqua" iconLiteral="dashicons-admin-users" iconSize="64" />
+                    </graphic>
+                </Label>
+            </JFXToggleNode>
+            <JFXToggleNode onMouseClicked="#buttonNotificationOnClick" fx:id="buttonNotification">
+                <toggleGroup>
+                    <fx:reference source="hello" />
+                </toggleGroup>
+                <Label>
+                    <graphic>
+                        <FontIcon iconColor="aqua" iconLiteral="dashicons-bell" iconSize="64" />
+                    </graphic>
+                </Label>
+            </JFXToggleNode>
+            <JFXToggleNode onMouseClicked="#buttonChatOnClick" fx:id="buttonChat">
+                <toggleGroup>
+                    <fx:reference source="hello" />
+                </toggleGroup>
+                <Label>
+                    <graphic>
+                        <FontIcon iconColor="aqua" iconLiteral="dashicons-admin-comments" iconSize="64" />
+                    </graphic>
+                </Label>
+            </JFXToggleNode>
+        </children>
+    </HBox>
+    <AnchorPane layoutX="301.0" layoutY="122.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+    <ScrollPane hbarPolicy="NEVER" layoutY="72.0" prefHeight="328.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="72.0">
+        <content>
+            <AnchorPane prefHeight="330.0" prefWidth="601.0">
+                <children>
+                    <VBox fx:id="postRoot" layoutX="149.0" layoutY="1.0" prefHeight="300.0" prefWidth="300.0" />
+                </children>
+            </AnchorPane>
+        </content>
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+    </ScrollPane>
+</AnchorPane>
